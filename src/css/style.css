@@ -1,0 +1,101 @@
+/* Fonts */
+@import url(../css/fonts.css);
+.header__description {
+  font-family: "Roboto";
+  font-size: 13px;
+  font-weight: 300; }
+
+/* Global Elements */
+ul, li {
+  display: block;
+  padding: 0;
+  margin: 0; }
+
+/* Header */
+.header {
+  padding-top: 15px;
+  background-image: url(../img/header_background.png);
+  background-position: 0 100%;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+  color: #fff; }
+
+.header:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(to right, #09052f 0%, #311d5e 100%);
+  opacity: 0.85; }
+
+.nav__item {
+  margin-left: 25px; }
+  .nav__item a {
+    color: #fff;
+    font-family: "Roboto-Black";
+    font-size: 13px;
+    text-transform: uppercase;
+    text-decoration: none; }
+  .nav__item a:hover {
+    color: #00e0d0;
+    letter-spacing: 0.33px; }
+
+.header__title {
+  padding-top: 180px;
+  font-family: "Playfair Display-Black";
+  font-size: 32px;
+  font-weight: 400;
+  letter-spacing: 0.32px; }
+
+.line-separator {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center; }
+  .line-separator span {
+    content: '';
+    width: 50px;
+    height: 1px;
+    background-color: #00e0d0; }
+
+.header__description {
+  margin-top: 30px;
+  line-height: 24px;
+  letter-spacing: 0.7px; }
+
+.header__button {
+  margin-top: 50px;
+  color: #00e0d0;
+  font-size: 16px;
+  font-family: "Hammersmith One";
+  padding: 15px;
+  border: 1px solid #00e0d0;
+  background: transparent;
+  border-radius: 2px;
+  text-transform: uppercase;
+  transition: .3s; }
+  .header__button:hover {
+    background: #00e0d0;
+    color: #fff;
+    cursor: pointer; }
+
+.header__slider {
+  margin-top: 120px;
+  margin-bottom: 70px; }
+  .header__slider span {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    margin-right: 5px;
+    transition: .3s; }
+  .header__slider span:hover {
+    background: #00e0d0;
+    border: 1px solid #00e0d0;
+    cursor: pointer; }
+  .header__slider :last-child {
+    margin-right: 0; }
