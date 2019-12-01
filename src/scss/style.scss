@@ -3,12 +3,13 @@
 
 $roboto: 'Roboto';
 $roboto-black: 'Roboto-Black';
+$playfair-display: 'Playfair Display';
 $playfair-display-black: 'Playfair Display-Black';
 $hammersmith-one: 'Hammersmith One';
 
 %roboto-text {
 	font-family: $roboto;
-	font-size: 13px;
+	font-size: 14px;
 	font-weight: 300;
 }
 
@@ -29,16 +30,16 @@ ul, li {
 	position: relative;
 	text-align: center;
 	color: #fff;
-}
-.header:before {
-	content: '';
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	background-image: linear-gradient(to right, #09052f 0%, #311d5e 100%);
-	opacity: 0.85;
+	&:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background-image: linear-gradient(to right, #09052f 0%, #311d5e 100%);
+		opacity: 0.85;
+	}
 }
 .nav__item {
 	margin-left: 25px;
@@ -55,7 +56,7 @@ ul, li {
 }
 }
 .header__title {
-	padding-top: 180px;
+	margin-top: 180px;
 	font-family: $playfair-display-black;
 	font-size: 32px;
 	font-weight: 400;
@@ -116,4 +117,82 @@ ul, li {
 	:last-child {
 		margin-right: 0;
 	}
+}
+/* Our story */
+.our-story__logo {
+	margin-top: 70px;
+}
+.our-story__title {
+	margin-top: 70px;
+	margin-bottom: 0;
+	color: #413d4b;
+	font-family: $playfair-display;
+	font-size: 22px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 1.1px;
+}
+.our-story__text {
+	margin-top: 30px;
+	opacity: 0.75;
+	color: #413d4d;
+	@extend %roboto-text;
+	line-height: 22px;
+	letter-spacing: 0.42px;
+}
+.our-story .header__button {
+	margin-top: 30px;
+	margin-bottom: 70px;
+}
+.video {
+	background-image: url(../img/our_story_bg.png);
+	background-position: 0 100%;
+	background-size: cover;
+	position: relative;
+	&:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background-image: linear-gradient(to right, #09052f 0%, #311d5e 100%);
+		opacity: 0.85;
+	}
+}
+.video__player {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.button-border {
+	margin-top: 230px;
+	width: 100px;
+	height: 100px;
+	background: transparent;
+	border: 4px solid #fff;
+	border-radius: 100px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	transition: .3s;
+	img {
+		margin-left: 5px;
+	}
+	&:hover {
+		background-color: #00e0d0;
+		cursor: pointer;
+	}
+}
+.our-story__button-title {
+	margin-top: 30px;
+	margin-bottom: 200px;
+	color: #fff;
+	font-family: $roboto-black;
+	font-size: 16px;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 0.8px;
 }
